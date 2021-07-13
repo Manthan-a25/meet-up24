@@ -39,7 +39,7 @@ navigator.mediaDevices
     $("html").keydown(function (e) {
       if (e.which == 13 && text.val().length !== 0) {
         socket.emit("message", text.val());
-        
+        socket.emit("vidsend",ROOM_ID,text.val())
         text.val("");
       }
     });
