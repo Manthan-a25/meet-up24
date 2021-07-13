@@ -1,0 +1,107 @@
+body{
+  /* background-image: linear-gradient( black, white); */
+  /* background-image: url("https://images.unsplash.com/photo-1530569673472-307dc017a82d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGdyYWRpZW50fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"); */
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 900px;
+}
+.flip-card {
+  
+  width: 700px;
+  height: 600px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  box-shadow:20px 20px 10px rgb(68, 67, 67);
+  box-shadow: 0px 0px 10px rgb(54, 53, 53);
+  
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: rgb(255, 255, 255);
+  color: black;
+ 
+}
+.flip2{
+  background-image: url("https://images.unsplash.com/photo-1612831455359-970e23a1e4e9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dmlkZW8lMjBjYWxsfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.flip1{
+  background-image: url("https://images.unsplash.com/photo-1488998287214-1e668a8e0dc4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y2hhdHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Style the back side */
+.flip-card-back {
+  background-image: linear-gradient(to bottom right, rgb(43, 42, 42), rgb(211, 211, 211));
+  color: rgb(14, 13, 13);
+  transform: rotateY(180deg);
+  text-align: center;
+}
+/* .flip-card{
+  margin-left: 20%;
+} */
+.row{
+  margin-top: 15%;
+}
+.title{
+  /* border: 2px solid red; */
+  text-align: center;
+  margin-top: 3px;
+  height: 40vh;
+  background-image: url("https://www.thoughtco.com/thmb/BqDMjxuqOkn7MiAOyVi4M4ZPDXk=/1980x1320/filters:fill(auto,1)/171264809-56a9f6985f9b58b7d0003992-222b09549e304d3989a4a73ae26d96f2.jpg");
+  background-repeat: no-repeat ;
+  background-size: 1600px 300px;
+  font-weight: bolder;
+  position: sticky;
+  }
+  .card-title{
+    margin-top: 10%;
+    font-weight: bolder;
+  }
+  .left{
+    float: left;
+    /* border: 2px solid red; */
+    height: 60vh;
+    width: 50%;
+  }
+  .right{
+    float: right;
+    /* border: 2px solid red; */
+    height: 60vh;
+    width: 50%;
+  }
+  .cont{
+    margin-left: 40px;
+  }
+  .head{
+    text-align: center;
+  }
+  .navbar{
+    border-radius: 30px;
+  }

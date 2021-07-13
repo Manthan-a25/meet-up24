@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login page</title>
+        <link rel="stylesheet" href="/public/login.css" />
+        <link
+          rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="/public/register.css" />
+        <style>
+          body {
+            background-color: rgb(129, 129, 129);
+          }
+        </style>
+      </head>
+      <body>
+        <nav class="navbar navbar-dark bg-light">
+          <strong class="font1">
+            <img
+              src="https://img.icons8.com/ios-filled/50/000000/meetup.png"
+              alt=""
+            />MEET-UP</strong
+          >
+          <div>
+            <img
+              src="https://img.icons8.com/material-rounded/24/000000/support.png"
+            />
+            <img
+              src="https://img.icons8.com/material-rounded/24/000000/settings.png"
+            />
+            <img
+              src="https://img.icons8.com/material-rounded/24/000000/feedback.png"
+            />
+          </div>
+        </nav>
+        <section>
+          <form method="POST" action="/register">
+            <div class="container">
+              <h1
+                style="
+                  font-weight: bolder;
+                  text-align: center;
+                  text-shadow: 1px 1px 3px black;
+                "
+              >
+                REGISTER
+              </h1>
+              <p style="text-align: center">
+                Please Fill in this Form To Create an Account
+              </p>
+              <p style="font-size: small">
+                *Required field mandatory to be filled
+              </p>
+              <hr />
+              <label for="text"><b>Username *</b></label>
+              <input
+                type="text"
+                placeholder="Enter Your Name"
+                name="username"
+                id="username"
+                required
+              />
+
+              <label for="psw"><b>Password *</b></label>
+              <input
+                type="password"
+                placeholder="Enter Password"
+                name="password"
+                id="psw"
+                required
+              />
+
+              <p class="sign">
+                By creating an account you agree to our
+                <a href="#">Terms & Privacy</a>.
+              </p>
+              <button type="submit" class="registerbtn">Register</button>
+
+              <p class="sign">
+                Already have an account? <a href="/">Sign in</a>.
+              </p>
+            </div>
+          </form>
+        </section>
+      </body>
+    </html>
+  </body>
+</html>

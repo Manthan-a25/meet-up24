@@ -1,0 +1,73 @@
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  box-shadow:20px 20px 10px black; 
+  box-shadow: 0px 0px 10px black; 
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 96%;
+  padding: 7px;
+  margin: -13px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  box-shadow:20px 20px 10px rgb(77, 76, 76);
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #111111;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #000000;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  box-shadow:20px 20px 10px rgb(77, 76, 76);
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+.sign{
+    text-align: center;
+}
+#mno{
+  width: 96%;
+  padding: 7px;
+  margin: -13px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  box-shadow:20px 20px 10px rgb(77, 76, 76);
+}
+.navbar{
+  border-radius: 30px;
+}

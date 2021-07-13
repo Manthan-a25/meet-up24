@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="/public/login.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body{
+            background-color: rgb(167, 165, 165);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-light">
+        <strong class="font1"><img src="https://img.icons8.com/ios-filled/50/000000/meetup.png"alt="">MEET-UP</strong>
+        <div>
+            <img src="https://img.icons8.com/material-rounded/24/000000/support.png"/>
+               <img src="https://img.icons8.com/material-rounded/24/000000/settings.png"/>
+            <img src="https://img.icons8.com/material-rounded/24/000000/feedback.png"/></div>
+           
+
+    </nav>
+    <section class="form my-4 mx-5">
+        <div class="container ">
+            <div class="row mr-2">
+                <div class="col-lg-7" style=" margin: 0px; padding: 0px;">
+                    
+                    <img src="/public/photos/2BWJXXY.jpg" style=" height: 550px; width: 570px;" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-5 pt-5">
+      <img src="https://img.icons8.com/ios-filled/50/000000/meetup.png"alt=""><strong>MEET-UP</strong>
+                    <h4>Login Into Your Account</h4>
+            <form method="POST" action="/login">
+                <div class="form-row">
+                    <div class="col-lg-10" style=" box-shadow: 20px 20px 10px rgb(119, 116, 116);">
+                        <input type="text" name="username" placeholder="Username" class="form-control my-2 p-3" required>
+                    </div>
+                </div>
+                    <div class="form-row">
+                        <div class="col-lg-10" style=" box-shadow: 20px 20px 10px rgb(119, 116, 116);">
+                            <input type="password" name="password" placeholder="Password" class="form-control my-2 p-3" required>
+                        </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-lg-7">
+                        <button type="submit" class="btn1 mt-3 mb-3">LOGIN</button>
+                    </div>
+                </div>
+                    <a href="#">Forget Password</a>
+                    <p>Do You Have An Account? <a href="/register">Register Here</a></p>
+            </form>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
+    
+</body>
+</html>
